@@ -1,0 +1,65 @@
+.markets {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        text-align: center;
+        padding-top: 3rem;
+        background: linear-gradient(180deg, transparent, rgba(109, 9, 240, 0.521), rgba(72, 18, 158, 0.836)),
+            url("https://rockiereact.surielementor.com/static/media/banner-04.543529f8ea7cfb150846.png");
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100vw;
+    }
+
+    .market-data {
+        width: 99vw;
+        cursor: pointer;
+        border-collapse: collapse;
+
+        tr {
+            max-width: 99vw;
+            border: none;
+
+            td,
+            th {
+                box-sizing: border-box;
+                text-align: center;
+                padding-top: 0.6rem;
+                border: none;
+                padding-bottom: 0.6rem;
+
+            }
+
+            background: linear-gradient(180deg, rgb(91, 14, 163), transparent);
+
+            .explore {
+                a {
+                    text-decoration: none;
+                    color: rgb(124, 124, 124);
+                }
+            }
+
+            &:hover {
+
+                .explore {
+                    &:hover {
+                        a {
+                            color: white;
+                        }
+
+                        background: linear-gradient(00deg, rgba(178, 0, 202, 0.774), transparent);
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+}

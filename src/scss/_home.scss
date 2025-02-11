@@ -1,0 +1,208 @@
+.home {
+    width: auto;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+    min-height: 100vh;
+
+    .start-trading {
+        text-align: center;
+
+        button {
+            padding: 1rem 2rem;
+            font-size: larger;
+            background-color: rgb(1, 78, 245);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+        }
+
+        img {
+            width: 90vw;
+        }
+    }
+
+    .crypto-main {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+
+
+        .why-content {
+            ul {
+                list-style: none;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    border-radius: 16px;
+                    padding: 0rem 1rem;
+                    max-width: max-content;
+
+                    .icon-div {
+                        background-color: rgba(128, 133, 202, 0.671);
+                        border-radius: 10px;
+                        padding: 0rem 0.7rem;
+                    }
+
+                    * {
+                        margin: 1rem 0.5rem;
+                    }
+
+                    &:hover {
+                        background-color: rgba(208, 242, 252, 0.801);
+                        box-shadow: 0 14px 64px 0 hsl(0deg 0% 6% / 10%);
+                    }
+                }
+            }
+
+        }
+
+        .crypto-experience {
+            width: 50%;
+
+            .experience {
+                width: 400px;
+                border-radius: 19px;
+                padding: 1rem 3rem;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+
+                &:hover {
+                    box-shadow: 0 14px 64px 0 hsl(0deg 0% 6% / 10%);
+                }
+
+                .emojis {
+                    margin: 1.5rem 0rem;
+                    display: flex;
+
+                    .emoji {
+                        font-size: 3.5rem;
+                        letter-spacing: 1rem;
+                        padding: 0.423rem;
+
+                        &:hover {
+                            color: rgb(108, 75, 139);
+                        }
+                    }
+                }
+            }
+
+            .user-card {
+                margin-top: 1rem;
+                background-color: white;
+                border-radius: 16px;
+                padding: 1.7rem;
+
+                .portfolio {
+                    text-align: left;
+                    padding: 1rem;
+                    color: whitesmoke;
+                    border-radius: 10px;
+                    background: linear-gradient(20deg,
+                            rgb(66, 7, 90), rgb(60, 7, 173));
+
+                    .btc-icon {
+                        position: absolute;
+                        font-size: 20px;
+                        margin-top: -40px;
+                        margin-left: 350px;
+                        text-shadow: 2px 2px 1px black;
+                    }
+
+                    .percent {
+                        position: absolute;
+                        margin-top: -36px;
+                        margin-left: 150px;
+                    }
+
+                    button {
+                        cursor: pointer;
+                        padding: 0.5rem 1rem;
+                        border-radius: 1rem;
+                        margin-right: 0.7rem;
+                        border-color: white;
+                        background-color: transparent;
+                        color: white;
+
+                        &:hover {
+                            background-color: white;
+                            color: rgb(1, 78, 245);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and(max-width:850px) {
+    .home .crypto-main {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        .why-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .crypto-experience {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .experience {
+                width: 70vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width: max-content;
+
+                .emojis {
+                    margin: 0;
+                }
+
+                .emoji {
+                    font-size: 1px;
+                }
+            }
+
+            .user-card {
+                width: 70vw;
+
+                .portfolio {
+                    .btc-icon {
+                        position: absolute;
+                        margin-left: 50vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:490) {
+
+    .home .crypto-main {
+        .crypto-experience .experience {
+            width: 370px;
+
+            .emojis {
+                max-width: 350px;
+            }
+        }
+    }
+}

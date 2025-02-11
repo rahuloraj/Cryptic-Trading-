@@ -1,0 +1,708 @@
+.home {
+  width: auto;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  min-height: 100vh;
+}
+.home .start-trading {
+  text-align: center;
+}
+.home .start-trading button {
+  padding: 1rem 2rem;
+  font-size: larger;
+  background-color: rgb(1, 78, 245);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+}
+.home .start-trading img {
+  width: 90vw;
+}
+.home .crypto-main {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.home .crypto-main .why-content ul {
+  list-style: none;
+}
+.home .crypto-main .why-content ul li {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  padding: 0rem 1rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.home .crypto-main .why-content ul li .icon-div {
+  background-color: rgba(128, 133, 202, 0.671);
+  border-radius: 10px;
+  padding: 0rem 0.7rem;
+}
+.home .crypto-main .why-content ul li * {
+  margin: 1rem 0.5rem;
+}
+.home .crypto-main .why-content ul li:hover {
+  background-color: rgba(208, 242, 252, 0.801);
+  box-shadow: 0 14px 64px 0 hsla(0deg, 0%, 6%, 0.1);
+}
+.home .crypto-main .crypto-experience {
+  width: 50%;
+}
+.home .crypto-main .crypto-experience .experience {
+  width: 400px;
+  border-radius: 19px;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.home .crypto-main .crypto-experience .experience:hover {
+  box-shadow: 0 14px 64px 0 hsla(0deg, 0%, 6%, 0.1);
+}
+.home .crypto-main .crypto-experience .experience .emojis {
+  margin: 1.5rem 0rem;
+  display: flex;
+}
+.home .crypto-main .crypto-experience .experience .emojis .emoji {
+  font-size: 3.5rem;
+  letter-spacing: 1rem;
+  padding: 0.423rem;
+}
+.home .crypto-main .crypto-experience .experience .emojis .emoji:hover {
+  color: rgb(108, 75, 139);
+}
+.home .crypto-main .crypto-experience .user-card {
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 16px;
+  padding: 1.7rem;
+}
+.home .crypto-main .crypto-experience .user-card .portfolio {
+  text-align: left;
+  padding: 1rem;
+  color: whitesmoke;
+  border-radius: 10px;
+  background: linear-gradient(20deg, rgb(66, 7, 90), rgb(60, 7, 173));
+}
+.home .crypto-main .crypto-experience .user-card .portfolio .btc-icon {
+  position: absolute;
+  font-size: 20px;
+  margin-top: -40px;
+  margin-left: 350px;
+  text-shadow: 2px 2px 1px black;
+}
+.home .crypto-main .crypto-experience .user-card .portfolio .percent {
+  position: absolute;
+  margin-top: -36px;
+  margin-left: 150px;
+}
+.home .crypto-main .crypto-experience .user-card .portfolio button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-right: 0.7rem;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+}
+.home .crypto-main .crypto-experience .user-card .portfolio button:hover {
+  background-color: white;
+  color: rgb(1, 78, 245);
+}
+
+@media only screen and (max-width: 850px) {
+  .home .crypto-main {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .home .crypto-main .why-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .home .crypto-main .crypto-experience {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .crypto-main .crypto-experience .experience {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .home .crypto-main .crypto-experience .experience .emojis {
+    margin: 0;
+  }
+  .home .crypto-main .crypto-experience .experience .emoji {
+    font-size: 1px;
+  }
+  .home .crypto-main .crypto-experience .user-card {
+    width: 70vw;
+  }
+  .home .crypto-main .crypto-experience .user-card .portfolio .btc-icon {
+    position: absolute;
+    margin-left: 50vw;
+  }
+}
+@media only screen and (max-width: 490) {
+  .home .crypto-main .crypto-experience .experience {
+    width: 370px;
+  }
+  .home .crypto-main .crypto-experience .experience .emojis {
+    max-width: 350px;
+  }
+}
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal .modal-content .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .modal-content .close:hover, .modal .modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+.login form {
+  display: block;
+}
+.login form * {
+  margin: 1rem 2rem 0rem 0rem;
+  padding: 0.5rem 1rem;
+}
+.login form input {
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1.5px rgb(10, 50, 136);
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, rgb(124, 43, 216), rgba(22, 17, 46, 0.473));
+}
+.login form input::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+.login form input:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.login form input::placeholder {
+  color: rgb(255, 255, 255);
+}
+.login form input:focus {
+  outline: none;
+}
+.login form button {
+  display: block;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+.signup form {
+  display: block;
+}
+.signup form div {
+  margin: 0.2rem 2rem 0rem 0rem;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+.signup form div label {
+  display: block;
+}
+.signup form div input {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1.5px rgb(10, 50, 136);
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, rgb(124, 43, 216), rgba(99, 14, 148, 0.473));
+}
+.signup form div input::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+.signup form div input:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+.signup form div input::placeholder {
+  color: rgb(255, 255, 255);
+}
+.signup form div input:focus {
+  outline: none;
+}
+.signup form .signbutton {
+  display: block;
+  border-radius: 1rem;
+  border-color: rgb(1, 78, 245);
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+}
+
+.account {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.account * {
+  margin: 1rem auto;
+}
+.account .avator {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url("https://rockiereact.surielementor.com/static/media/user.50ae0b5cba24500443ed.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.account .uploadUrl {
+  display: block;
+  border-radius: 1rem;
+  border-color: rgb(173, 0, 0);
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+}
+.account .imgUrl,
+.account .updateUrl {
+  display: none;
+}
+.account .imgUrl.open,
+.account .updateUrl.open {
+  display: block;
+}
+.account table button {
+  position: absolute;
+  margin-left: 30vw;
+  margin-top: -1.2rem;
+}
+.account table .buy:hover, .account table .sell:hover {
+  color: rgba(103, 8, 226, 0.685);
+}
+
+.coinCard {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+.coinCard * {
+  margin-top: 1rem;
+}
+
+.buy-crypto {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.buy-crypto .all-coins-container {
+  width: 100vw;
+  margin: 0;
+  text-align: center;
+}
+.buy-crypto .all-coins-container .coin-container {
+  display: inline-block;
+  margin: auto;
+  padding: 0.5rem 1rem;
+}
+.buy-crypto .all-coins-container .coin-container button {
+  margin: 1rem auto auto auto;
+  width: 6rem;
+}
+
+.markets {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.markets .title {
+  text-align: center;
+  padding-top: 3rem;
+  background: linear-gradient(180deg, transparent, rgba(109, 9, 240, 0.521), rgba(72, 18, 158, 0.836)), url("https://rockiereact.surielementor.com/static/media/banner-04.543529f8ea7cfb150846.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+.markets .market-data {
+  width: 99vw;
+  cursor: pointer;
+  border-collapse: collapse;
+}
+.markets .market-data tr {
+  max-width: 99vw;
+  border: none;
+  background: linear-gradient(180deg, rgb(91, 14, 163), transparent);
+}
+.markets .market-data tr td,
+.markets .market-data tr th {
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 0.6rem;
+  border: none;
+  padding-bottom: 0.6rem;
+}
+.markets .market-data tr .explore a {
+  text-decoration: none;
+  color: rgb(124, 124, 124);
+}
+.markets .market-data tr:hover .explore:hover {
+  background: linear-gradient(0deg, rgba(178, 0, 202, 0.774), transparent);
+}
+.markets .market-data tr:hover .explore:hover a {
+  color: white;
+}
+.markets p {
+  text-align: center;
+}
+
+.trades {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+*:not(p, h1, h2, h3, h4) {
+  transition: all 0.4s ease-in-out;
+  max-width: 100vw;
+}
+
+a {
+  color: rgb(111, 90, 126);
+}
+
+input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+input::placeholder {
+  opacity: 0.5;
+}
+
+button {
+  border-radius: 1rem;
+  border-color: rgb(1, 78, 245);
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+button:hover {
+  border-color: rgb(0, 49, 155);
+  border-radius: 0.85rem;
+  box-shadow: 1px 1px 3px rgba(18, 27, 48, 0.274);
+}
+button:active {
+  border-radius: 1rem;
+  border-color: rgb(1, 78, 245);
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 1.5px rgb(10, 50, 136);
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, rgb(124, 43, 216), rgba(99, 14, 148, 0.473));
+}
+input::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+input:-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+input::placeholder {
+  color: rgb(255, 255, 255);
+}
+input:focus {
+  outline: none;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(40deg, rgba(70, 158, 151, 0.815), rgba(151, 22, 177, 0.856));
+  border-radius: 9px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(1, 78, 245);
+}
+body {
+  scrollbar-face-color: linear-gradient(40deg, rgba(70, 158, 151, 0.815), rgba(151, 22, 177, 0.856));
+  scrollbar-track-color: rgb(1, 78, 245);
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  height: 99vh;
+  overflow-y: auto;
+  left: -300px;
+}
+.main-nav::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.main-nav::-webkit-scrollbar-thumb {
+  background: linear-gradient(40deg, rgba(70, 158, 151, 0.815), rgba(151, 22, 177, 0.856));
+  border-radius: 9px;
+}
+.main-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+.main-nav {
+  scrollbar-face-color: linear-gradient(40deg, rgba(70, 158, 151, 0.815), rgba(151, 22, 177, 0.856));
+  scrollbar-track-color: transparent;
+}
+.main-nav ul {
+  list-style-type: none;
+  margin: auto;
+}
+.main-nav ul li {
+  border-bottom: 1px solid rgb(218, 167, 209);
+  padding: 2rem;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: rgba(23, 133, 114, 0.856);
+}
+.main-nav ul li:hover a {
+  color: rgb(111, 90, 126);
+}
+.main-nav.nav-active {
+  transform: translateX(300px);
+}
+
+.menu-btn {
+  position: fixed;
+  z-index: 1;
+  left: 1rem;
+  height: 20px;
+  padding: 0.2rem;
+  width: 28px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.menu-btn_burger {
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background: rgb(1, 78, 245);
+}
+.menu-btn_burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  border-radius: 3px;
+  width: 28px;
+  height: 3px;
+  background: rgb(1, 78, 245);
+}
+.menu-btn_burger::after {
+  content: "";
+  border-radius: 3px;
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: rgb(1, 78, 245);
+}
+.menu-btn_burger.open {
+  transform: rotate(0deg);
+  background: transparent;
+}
+.menu-btn_burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn_burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+p {
+  color: #7a80a0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #202329;
+  transition: 0.4s;
+}
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.2s;
+}
+.switch .slider.round {
+  border-radius: 34px;
+}
+.switch .slider.round:before {
+  border-radius: 50%;
+}
+.switch input:checked + .slider {
+  background-color: rgb(238, 236, 236);
+}
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: rgb(18, 27, 48);
+}
+
+.back-btn {
+  position: fixed;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: #0055ff;
+  display: block;
+}
+
+table {
+  display: flexbox;
+  width: 100vw;
+}
+table th {
+  background-color: rgba(124, 136, 252, 0.3);
+}
+table tr,
+table td,
+table th {
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+table tr button,
+table td button,
+table th button {
+  position: absolute;
+  display: block;
+  margin-top: -19px;
+  padding-top: 0.4rem;
+  margin-left: 30vw;
+}
+table tr button.buy,
+table td button.buy,
+table th button.buy {
+  margin-left: 20vw;
+}
+@media (max-width: 700px) {
+  table tr {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    border: none;
+    margin: 0;
+    width: 100vw;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(0, 26, 255);
+  }
+  table tr td,
+table tr th {
+    width: 100vw;
+    display: block;
+    margin: auto;
+    border: none;
+    text-align: center;
+  }
+  table tr td button,
+table tr th button {
+    display: flexbox;
+    position: relative;
+    margin: auto;
+  }
+  table tr th {
+    font-weight: 300;
+    padding: -11px;
+  }
+}/*# sourceMappingURL=main.css.map */

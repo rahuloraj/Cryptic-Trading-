@@ -1,0 +1,47 @@
+.account {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    * {
+        margin: 1rem auto;
+    }
+
+    .avator {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: url("https://rockiereact.surielementor.com/static/media/user.50ae0b5cba24500443ed.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .uploadUrl {
+        display: block;
+        border-radius: 1rem;
+        border-color: rgb(173, 0, 0);
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+    }
+
+    .imgUrl,
+    .updateUrl {
+        display: none;
+
+        &.open {
+            display: block;
+        }
+    }
+    table{
+        button{
+            position: absolute;
+            margin-left:30vw;
+            margin-top: -1.2rem;
+        }
+        .buy,.sell{
+            &:hover{
+                color: rgba(103, 8, 226, 0.685);
+            }
+        }
+    }
+}
